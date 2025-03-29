@@ -239,8 +239,13 @@ interface tunnel 104
 ip address 100.100.102.1 255.255.255.252
 tunnel source Se0/0/0.104
 tunnel destination 10.0.0.4
-
 ip route 192.168.40.0 255.255.255.0 100.100.102.2
+
+interface tunnel 105
+ip address 100.100.103.1 255.255.255.252
+tunnel source Se0/0/0.105
+tunnel destination 10.0.0.5
+ip route 192.168.50.0 255.255.255.0 100.100.103.2
 
 
 R2:
@@ -273,5 +278,14 @@ interface tunnel 401
 ip address 100.100.102.2 255.255.255.252
 tunnel source Se0/0/0.401
 tunnel destination 30.0.0.1
-
 ip route 192.168.10.0 255.255.255.0 100.100.102.1
+
+R5:
+en
+conf t
+
+interface tunnel 501
+ip address 100.100.103.2 255.255.255.252
+tunnel source Se0/0/0.501
+tunnel destination 40.0.0.1
+ip route 192.168.10.0 255.255.255.0 100.100.103.1
