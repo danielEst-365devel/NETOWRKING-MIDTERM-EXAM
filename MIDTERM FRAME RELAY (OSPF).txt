@@ -25,7 +25,7 @@ int s0/0.105 point-to-point
 frame-relay interface-dlci 105
 ip ad 40.0.0.1 255.255.255.0
 
-int Gig1/0
+int Gig0/1
 ip ad 192.168.10.1 255.255.255.0
 no sh
 
@@ -55,7 +55,7 @@ int s0/0.205 point-to-point
 frame-relay interface-dlci 205
 ip ad 40.0.0.2 255.255.255.0
 
-int Gig1/0
+int Gig0/1
 ip ad 192.168.20.1 255.255.255.0
 no sh
 
@@ -85,7 +85,7 @@ frame-relay interface-dlci 305
 ip ad 40.0.0.3 255.255.255.0
 
 
-int Gig1/0
+int Gig0/1
 ip add 192.168.30.1 255.255.255.0
 no sh
 
@@ -114,7 +114,7 @@ int s0/0.405 point-to-point
 frame-relay interface-dlci 405
 ip ad 40.0.0.4 255.255.255.0
 
-int Gig1/0
+int Gig0/1
 ip add 192.168.40.1 255.255.255.0
 no sh
 
@@ -143,7 +143,7 @@ int s0/0.504 point-to-point
 frame-relay interface-dlci 504
 ip ad 40.0.0.5 255.255.255.0
 
-int Gig1/0
+int Gig0/1
 ip add 192.168.50.1 255.255.255.0
 no sh
 
