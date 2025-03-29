@@ -3,25 +3,25 @@ MIDTERM FRAME RELAY
 R1:
 en
 conf t
-int s0/0
+int Se0/0/0
 enca fra
 no sh
 exit
 
-int s0/0.102 point-to-point 
+int Se0/0/0.102 point-to-point 
 frame-relay interface-dlci 102
 ip ad 10.0.0.1 255.255.255.0
 exit
 
-int s0/0.103 point-to-point 
+int Se0/0/0.103 point-to-point 
 frame-relay interface-dlci 103
 ip ad 20.0.0.1 255.255.255.0
 
-int s0/0.104 point-to-point 
+int Se0/0/0.104 point-to-point 
 frame-relay interface-dlci 104
 ip ad 30.0.0.1 255.255.255.0
 
-int s0/0.105 point-to-point 
+int Se0/0/0.105 point-to-point 
 frame-relay interface-dlci 105
 ip ad 40.0.0.1 255.255.255.0
 
@@ -40,25 +40,25 @@ license boot module c1900 technology-package securityk9
 R2:
 en
 conf t
-int s0/0
+int Se0/0/0
 enca fra
 no sh
 exit
 
-int s0/0.201 point-to-point 
+int Se0/0/0.201 point-to-point 
 frame-relay interface-dlci 201
 ip ad 10.0.0.2 255.255.255.0
 exit
 
-int s0/0.203 point-to-point 
+int Se0/0/0.203 point-to-point 
 frame-relay interface-dlci 203
 ip ad 20.0.0.2 255.255.255.0
 
-int s0/0.204 point-to-point 
+int Se0/0/0.204 point-to-point 
 frame-relay interface-dlci 204
 ip ad 30.0.0.2 255.255.255.0
 
-int s0/0.205 point-to-point 
+int Se0/0/0.205 point-to-point 
 frame-relay interface-dlci 205
 ip ad 40.0.0.2 255.255.255.0
 
@@ -76,25 +76,25 @@ license boot module c1900 technology-package securityk9
 R3:
 en
 conf t
-int s0/0
+int Se0/0/0
 enca fra
 no sh
 exit
 
-int s0/0.301 point-to-point 
+int Se0/0/0.301 point-to-point 
 frame-relay interface-dlci 301
 ip ad 10.0.0.3 255.255.255.0
 exit
 
-int s0/0.302 point-to-point 
+int Se0/0/0.302 point-to-point 
 frame-relay interface-dlci 302
 ip ad 20.0.0.3 255.255.255.0
 
-int s0/0.304 point-to-point 
+int Se0/0/0.304 point-to-point 
 frame-relay interface-dlci 304
 ip ad 30.0.0.3 255.255.255.0
 
-int s0/0.305 point-to-point 
+int Se0/0/0.305 point-to-point 
 frame-relay interface-dlci 305
 ip ad 40.0.0.3 255.255.255.0
 
@@ -112,25 +112,25 @@ license boot module c1900 technology-package securityk9
 R4:
 en
 conf t
-int s0/0
+int Se0/0/0
 enca fra
 no sh
 exit
 
-int s0/0.401 point-to-point 
+int Se0/0/0.401 point-to-point 
 frame-relay interface-dlci 401
 ip ad 10.0.0.4 255.255.255.0
 exit
 
-int s0/0.402 point-to-point 
+int Se0/0/0.402 point-to-point 
 frame-relay interface-dlci 402
 ip ad 20.0.0.4 255.255.255.0
 
-int s0/0.403 point-to-point 
+int Se0/0/0.403 point-to-point 
 frame-relay interface-dlci 403
 ip ad 30.0.0.4 255.255.255.0
 
-int s0/0.405 point-to-point 
+int Se0/0/0.405 point-to-point 
 frame-relay interface-dlci 405
 ip ad 40.0.0.4 255.255.255.0
 
@@ -148,25 +148,25 @@ license boot module c1900 technology-package securityk9
 R5:
 en
 conf t
-int s0/0
+int Se0/0/0
 enca fra
 no sh
 exit
 
-int s0/0.501 point-to-point 
+int Se0/0/0.501 point-to-point 
 frame-relay interface-dlci 501
 ip ad 10.0.0.5 255.255.255.0
 exit
 
-int s0/0.502 point-to-point 
+int Se0/0/0.502 point-to-point 
 frame-relay interface-dlci 502
 ip ad 20.0.0.5 255.255.255.0
 
-int s0/0.503 point-to-point 
+int Se0/0/0.503 point-to-point 
 frame-relay interface-dlci 503
 ip ad 30.0.0.5 255.255.255.0
 
-int s0/0.504 point-to-point 
+int Se0/0/0.504 point-to-point 
 frame-relay interface-dlci 504
 ip ad 40.0.0.5 255.255.255.0
 
