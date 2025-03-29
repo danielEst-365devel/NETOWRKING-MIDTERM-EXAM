@@ -237,6 +237,27 @@ network 40.0.0.0 0.0.0.255 area 0
 exit
 
 
-
 VPN CONFIGURATION:
 
+R1:
+en
+conf t
+
+interface tunnel 102 
+ip address 100.100.100.1 255.255.255.0
+tunnel source Se0/0/0.102
+tunnel destination 10.0.0.2
+
+ip route 192.168.20.0 255.255.255.0 100.100.100.2
+
+
+R2:
+en
+conf t
+
+interface tunnel 201 
+ip address 100.100.100.2 255.255.255.0
+tunnel source Se0/0/0.201
+tunnel destination 10.0.0.1
+
+ip route 192.168.10.0 255.255.255.0 100.100.100.1
