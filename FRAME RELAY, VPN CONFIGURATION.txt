@@ -267,7 +267,6 @@ interface tunnel 301
 ip address 100.100.101.2 255.255.255.252
 tunnel source Se0/0/0.301
 tunnel destination 20.0.0.1
-
 ip route 192.168.10.0 255.255.255.0 100.100.101.1
 
 R4:
